@@ -19,13 +19,14 @@ pipeline {
                 '''
             }
         }
-    }
-
-    stage('tests'){
-        steps{
-            sh 'test -f build/index.html'
+        stage('tests'){
+            steps{
+                sh 'test -f build/index.html'
+            }
         }
     }
+
+    
 
     post {
         // Actions to perform after the pipeline completes
