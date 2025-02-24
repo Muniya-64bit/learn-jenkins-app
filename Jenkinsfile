@@ -3,9 +3,20 @@ pipeline {
 
     stages {
         // Stage 1: Print "Hello, Jenkins!"
-        stage('Say Hello') {
+        stage('Build') {
+            agent{
+                docker{
+                    image 'node:18-alpine'
+                    reuseNode true
+                }
+            }
             steps {
-                echo 'Hello, Jenkins!'
+                sh '''
+                ls -la
+                npm --version
+                npm ci
+                npm run build
+                '''
             }
         }
     }
