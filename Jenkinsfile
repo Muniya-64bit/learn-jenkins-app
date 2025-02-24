@@ -21,6 +21,7 @@ pipeline {
 
                 echo "Building the application..."
                 npm run build
+                ls -la
                 '''
             }
         }
@@ -37,9 +38,7 @@ pipeline {
                 sh '''
                 echo "Running tests..."
                 npm test
-
-                echo "Listing test results directory..."
-                ls -la test-results/ # Check if the test results file exists
+                ls -la
                 '''
             }
         }
