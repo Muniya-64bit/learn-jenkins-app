@@ -1,5 +1,3 @@
-Try AI directly in your favorite apps … Use Gemini to generate drafts and refine content, plus get Gemini Advanced with access to Google’s next-gen AI for LKR 6,425.00 LKR 0 for 1 month
-Jenkinsfile.txt
 pipeline {
     agent any
 
