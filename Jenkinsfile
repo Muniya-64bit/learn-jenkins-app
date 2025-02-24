@@ -47,7 +47,7 @@ pipeline {
     post {
         // Archive test results
         always {
-            junit 'test-results/**/*.xml' // Archive JUnit test results
+            junit 'test-results/junit.xml' // Archive JUnit test results
         }
 
         // Actions to perform after the pipeline completes
