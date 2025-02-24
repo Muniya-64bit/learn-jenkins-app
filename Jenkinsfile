@@ -2,7 +2,7 @@ pipeline {
     agent any // Run on any available agent
 
     stages {
-        // Stage 1: Build
+        // Stage 1: Print "Hello, Jenkins!"
         stage('Build') {
             agent {
                 docker {
